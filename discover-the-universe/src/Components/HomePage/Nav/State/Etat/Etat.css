@@ -1,67 +1,63 @@
-.img1{ 
-    transform:translate(-50%,-50%);
-}
-.etat1{
-    border-radius: 50%;
-    background-color: #2a334d;
-}
 
-.etat2{
-    border-radius: 50%;
-    background-color: #2a334d;
-    border: 2px #373b49 solid;
-}
-.etat3{
-    border-radius: 50%;
-    background-color: #2a334d;
-    border: 2px #373b49 solid;
-}
-.etat4{
-    border-radius: 50%;
-    background-color: #2a334d;
-    border: 2px #373b49 solid;
-}
+.img1{transform:translate(-50%,-50%);}
 
+.etat1{border-radius: 50%;}
 
+.etat2{border-radius: 50%;}
+
+.etat3{border-radius: 50%;}
+
+.etat4{border-radius: 50%;}
 
 @media screen and (max-width:500px){
-    .etat{
-        width: 1rem;
-        height: 1rem;
-        margin: 0 auto;
-    } 
-    .imgplanet{
-        width: 50px;
-        height:50px;
-        margin: 0.5rem;
-    }
-}
-
-@media screen and (min-width:500px) and (max-width:1023px){
-    .etat{
-        width: 2rem;
-        height: 2rem;
-        margin: 0 auto;
-    } 
-    .imgplanet{
-        width: 75px;
-        height:75px;
-        margin: 1rem;
-    }
-}
-
-@media screen and (min-width:1023px) {
-    .etat{
-        width: 4rem;
-        height: 4rem;
-        margin: 0 auto;
-    } 
-    .imgplanet{
-        width: 100px;
-        height:100px;
-        margin: 2rem;
-    }
-    .margin{
-        margin-top: 2.5rem;
-    }
+   .etat{
+       width: 1rem;
+       height: 1rem;
+       margin: 0 auto;
+   }
+   .imgplanet{
+       width: 50px;
+       height:50px;
+       margin: 0.5rem;
+   }
+   .imgasteroid{
+       width: 30px;
+       height:30px;
+       margin: 0.5rem;
+   }
+}@media screen and (min-width:500px) and (max-width:1023px){
+   .etat{
+       width: 2rem;
+       height: 2rem;
+       margin: 0 auto;
+   }
+   .imgplanet{
+       width: 75px;
+       height:75px;
+       margin: 1rem;
+   }
+   .imgasteroid{
+       width: 40px;
+       height:40px;
+       margin: 1.15rem;
+   }
+}@media screen and (min-width:1023px) {
+   .etat{
+       width: 4rem;
+       height: 4rem;
+       margin: 0 auto;
+   }
+   .imgplanet{
+       width: 100px;
+       height:100px;
+       margin: 2rem;
+   }
+   .imgasteroid{
+       width: 50px;
+       height:50px;
+       margin: 2rem;
+   }
+   .margin{
+       margin-top: 2.5rem;
+   }
 }

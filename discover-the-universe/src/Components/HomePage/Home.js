@@ -5,6 +5,7 @@ import Footer from './Footer/Footer';
 import Nav from './Nav/NavBar';
 import './HomePage.css';
 import { connect } from 'react-redux';
+import {playSound,stopSound} from '../../sound-utils';
 
 
 class Home extends Component{
@@ -13,6 +14,7 @@ class Home extends Component{
         this.state = {
             btnSetting:false,
             count:0
+
         }
     }
 
@@ -33,7 +35,18 @@ class Home extends Component{
 
     }
 
+
+
+
+
     render(){
+        console.log('check',this.props.audioIsActivate)
+        {this.props.audioIsActivate
+            ? playSound("./perso-planet.mp3")
+            : playSound()
+        }
+        
+        console.log("render");
         return(
             <div>
                 <Nav/>
@@ -51,7 +64,8 @@ class Home extends Component{
 
 const mapStateToProps = state => {
     return ({
-        lang: state.lang
+        lang: state.lang,
+        audioIsActivate:!state.audioIsActivate
     })
 };
 

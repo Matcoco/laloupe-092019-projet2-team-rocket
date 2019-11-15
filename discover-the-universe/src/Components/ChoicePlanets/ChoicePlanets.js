@@ -2,39 +2,27 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './ChoicePlanets.css';
 import SliderPlanets from './SliderPlanets';
-import { SELECT_REFERENCE_PLANET_EARTH} from '../actionTypes';
+import { SELECT_REFERENCE_PLANET_EARTH, SELECT_PLANET} from '../actionTypes';
 
 
 const items = [
   {
     src: "",
-    altText: "altText",
-    caption: "caption",
-    header: "header",
     key: '1',
     infos: ""
   },
   {
     src: "",
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    header: 'Slide 2 Header',
     key: '2',
     infos: ""
   },
   {
     src: "",
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    header: 'Slide 3 Header',
     key: '3',
     infos: ""
   },
   {
     src: "",
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    header: 'Slide 3 Header',
     key: '3',
     infos: ""
   }
@@ -187,6 +175,10 @@ class ChoicePlanets extends Component {
         count += 1;
       }
     }
+
+    console.log(items);
+    let planet = items[0].infos;
+    this.props.dispatch({type:SELECT_PLANET.type, planet})
 
     let earth = this.state.earth_infos;
     this.props.dispatch({ type: SELECT_REFERENCE_PLANET_EARTH.type, earth });

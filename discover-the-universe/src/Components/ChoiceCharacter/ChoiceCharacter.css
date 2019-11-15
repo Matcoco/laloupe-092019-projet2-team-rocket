@@ -1,5 +1,15 @@
+.container{
+    background-color: rgb(187, 187, 247);
+    background-image: linear-gradient(blue, white);
+    border-radius: 15%;
+    
+}
+.h4{
+    font-size: 3 rem;
+}
 .CharacterPage {
     height: 100%;
+    
 }
 
 .btn-radio {
@@ -17,6 +27,8 @@
 
 .input-name{
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 
@@ -60,12 +72,37 @@
 .avatar-component{
     margin-bottom: 2rem;;
 }
+.input-name{
+    display: flex;
+    justify-content: center;
+}
+.choice{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 3 rem;
+    
+}
+.perso{
+   font-family: 'Lobster', cursive;
+   color: white;
+   
+  
+
+}
+.btn-sucess{
+    color: blue;
+}
+
+h2{
+    padding:1.5rem;
+}
 
 @media screen and (max-width:500px){
     
     .container {
         height: auto;
         width: 100%;
+        background-color: rgb(187, 187, 247);
     }
 
     .avatar{
@@ -91,6 +128,18 @@
          display: flex;
          flex-direction: column;
          align-items: center;
+     }
+     .input-name{
+         display: flex;
+         justify-content: center;
+     }
+     .choice{
+         font-family: 'Lobster', cursive;
+         color:white;
+     }
+     .perso{
+        font-family: 'Lobster', cursive;
+
      }
 
 }

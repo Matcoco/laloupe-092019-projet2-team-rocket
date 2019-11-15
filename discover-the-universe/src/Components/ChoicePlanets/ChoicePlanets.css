@@ -4,8 +4,9 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  border-radius: 50%;
-  border: 10px solid #f10c0c;
+  border-radius: 100%;
+  border: 10px solid black;
+  
 
 }
 
@@ -15,12 +16,16 @@ h3,h5{
 
 
 .carousel-item img{
-    width:70%;
+    width:40%;
     margin:0 auto;
+    border-radius: 50%;
 }
 
 .buttons-planets{
     text-align: center;
+    margin-top: 5%;
+    
+    
 }
 
 
@@ -29,4 +34,5 @@ h3,h5{
         width:100%;
         margin:0 auto;
     }
+
 }

@@ -23,9 +23,29 @@ const items = [
     caption: 'Slide 3'
   },
   {
-    src: '/images/astrofille.png',
+    src: '/images/astronaute-fille1.png',
     altText: 'Slide 4',
     caption: 'Slide 4'
+  },
+  {
+    src: '/images/astronaute-fille2.png',
+    altText: 'Slide 5',
+    caption: 'Slide 5'
+  },
+  {
+    src: '/images/astronaute4.png',
+    altText: 'Slide 6',
+    caption: 'Slide 6'
+  },
+  {
+    src: '/images/astronaute5.png',
+    altText: 'Slide 7',
+    caption: 'Slide 7'
+  },
+  {
+    src: '/images/astronaute-ET.png',
+    altText: 'Slide 8',
+    caption: 'Slide 8'
   }
 ];
 

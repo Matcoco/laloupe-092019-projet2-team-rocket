@@ -17,7 +17,7 @@ class Etat3 extends React.Component {
                 ?
                     <img src="/images/jupiter.png " alt="" className="imgplanet img1"/>
                 :
-                    <img src="/images/asteroid.png " alt="" className="imgplanet img1"/>
+                    <img src="/images/asteroid.png " alt="" className="imgasteroid img1"/>
                 }
             </div>
         );

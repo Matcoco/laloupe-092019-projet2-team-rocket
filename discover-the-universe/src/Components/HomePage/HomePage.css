@@ -13,3 +13,25 @@
     font-family: 'Acme', sans-serif;
     font-size: 1rem;
 }
+
+@media screen and (min-width:501px) and (max-width:1023px){
+    .btn-setting{
+        width:100%;
+        padding:0.5rem;
+        border:none;
+        color:rgb(85, 84, 84);
+        font-family: 'Acme', sans-serif;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .btn-setting{
+        width:100%;
+        padding:0.5rem;
+        border:none;
+        color:rgb(85, 84, 84);
+        font-family: 'Acme', sans-serif;
+        font-size: 2rem;
+    }
+}

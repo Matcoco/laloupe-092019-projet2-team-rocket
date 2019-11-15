@@ -65,6 +65,8 @@ class Sliderclass extends React.Component{
     );
   });
 
+
+
   componentDidMount(){
     this.currentPlanet();
    this.currentPlanetPicture();
@@ -81,25 +83,28 @@ class Sliderclass extends React.Component{
     let planet = this.props.planets[this.currentIndex].infos;
     this.props.dispatch({type:SELECT_PLANET.type, planet})
 
-    /*console.log("je suis dans ma fonction currentPlanet : " , this.props.currentPlanet.id);*/
+  //console.log("je suis dans ma fonction currentPlanet : " , this.props.currentPlanet.id);
   }
 
   currentPlanetPicture = () => {
     let picture = this.props.planets[this.currentIndex].src;
     this.props.dispatch({type:SELECT_PLANET_PICTURE.type, picture});
   }
+    
+
 
   render(){
 
-    
+    console.log("props.currentPlanet", this.props.currentPlanet);
     return (
       <Fragment>
           {this.currentPlanet()}
           {this.currentPlanetPicture()}
+          {this.currentPlanet.id === "mars" ? this.currentPlanet():""}
           <NavBar />
           <div className="">
             <h3>{this.props.lang.choicePlanet[0]}</h3>
-            <h5>{this.props.lang.choicePlanet[0]}</h5>
+            <h5>{this.props.currentPlanet.id === undefined ? "mars": this.props.currentPlanet.id}</h5>
               <div className="carousel-planet">
                 <Carousel activeIndex={this.state.activeIndex} next={this.next} previous={this.previous} interval={false}>
               
@@ -110,8 +115,8 @@ class Sliderclass extends React.Component{
                 </Carousel>
               </div>
               <div className="buttons-planets">
-              <LinkButton className="btn btn-success btn-ChoiceCharacter" to="/ChoiceCharacter">{this.props.lang.choiceCharacter[4]}</LinkButton>
-              <LinkButton className="btn btn-success btn-ChoiceCharacter" to="/DisplayPlanet">{this.props.lang.choiceCharacter[1]}</LinkButton>
+              <LinkButton className="btn btn-info btn-ChoiceCharacter" to="/ChoiceCharacter">{this.props.lang.choiceCharacter[4]}</LinkButton>
+              <LinkButton className="btn btn-info btn-ChoiceCharacter" to="/DisplayPlanet">{this.props.lang.choiceCharacter[1]}</LinkButton>
             </div>
         </div>
 

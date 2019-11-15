@@ -1,4 +1,11 @@
-
 .carousel-inner{
     text-align: center;
+}
+@media screen and (min-width:501px){
+   
+    .carousel-item img{
+    width:20%; 
+    height: 20%;
+    margin:0 auto; 
+}
 }
